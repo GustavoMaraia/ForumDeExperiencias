@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum de Experiências</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="welcome-message">
+                    <h2>Bem-vindo ao Fórum de Experiências</h2>
+                    <p>Espalhe por aí suas aventuras no mundo do trabalho e os projetos que colocou em prática em qualquer área profissional.
+                    </p>
+                </div>
+                <form id="post-form" class="mb-4">
+                    <h3>Compartilhe sua experiência</h3>
+                    <div class="mb-3">
+                        <label for="user-name" class="form-label">Nome (opcional)</label>
+                        <input type="text" class="form-control" id="user-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="post-title" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="post-title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="post-content" class="form-label">Projeto</label>
+                        <textarea id="post-content" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="post-category" class="form-label">Área Relacionada</label>
+                        <input type="text" class="form-control" id="post-category" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Postar</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <label for="search" class="form-label">Buscar Postagens</label>
+                    <input type="text" id="search" class="form-control" placeholder="Digite uma palavra-chave...">
+                </div>
+                <div id="post-list" class="post-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

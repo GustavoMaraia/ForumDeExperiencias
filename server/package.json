@@ -1,0 +1,24 @@
+{
+  "name": "forumdeexperiencias",
+  "version": "1.0.0",
+  "description": "Um fórum online para compartilhar experiências profissionais e projetos em diversas áreas.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "forum",
+    "experiências",
+    "profissional",
+    "projetos"
+  ],
+  "author": "GustavoMaraia",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
